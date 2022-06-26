@@ -6,7 +6,7 @@
 /*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/22 16:45:11 by taboterm          #+#    #+#             */
-/*   Updated: 2022/06/20 11:23:26 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 17:34:35 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,14 @@ void	*ft_calloc(size_t count, size_t size)
 	ptr = (void *)malloc(count * size);
 	if (!ptr)
 		return (NULL);
-	ft_bzero(ptr, count);
+	ft_bzero(ptr, size * count);
 	return (ptr);
 }
 
-// int	main(void)
-// {
-// 	void * p = ft_calloc(2, 2);
-// 	char e[] = {0, 0, 0, 0};
-// 	printf("String after bytes %s\n", ft_calloc(SIZE_MAX, SIZE_MAX));
-// 	printf("String after theirs %s\n", calloc(SIZE_MAX, SIZE_MAX));
-// }
+/* int	main(void)
+{
+ 	void * p = ft_calloc(2, 2);
+	char e[] = {0, 0, 0, 0};
+ 	printf("String after bytes %s\n", ft_calloc(SIZE_MAX, SIZE_MAX));
+ 	printf("String after theirs %s\n", calloc(SIZE_MAX, SIZE_MAX));
+}*/

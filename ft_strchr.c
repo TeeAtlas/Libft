@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 12:47:00 by taboterm          #+#    #+#             */
-/*   Updated: 2022/06/15 19:13:24 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 18:14:43 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ char	*ft_strchr(const char *s, int c)
 	return ((char *) 0);
 }
 
-// int	main(void)
-// {
-// 	char	str[] = "1234567c89";
-// 	printf("Test \n");
-// 	printf("before function: %s\n", str);
-// 	printf("after function: %s\n", ft_strchr(str, '4'));
-// 	printf("Library function: %s\n", strchr(str, '4'));
-// 	return	0;
-// }
+/*int	main(void)
+{
+ 	char	str[] = "1234567c89";
+ 	printf("Test \n");
+ 	printf("before function: %s\n", str);
+ 	printf("after function: %s\n", ft_strchr(str, '4'));
+ 	printf("Library function: %s\n", strchr(str, '4'));
+ 	return	0;
+}*/

@@ -3,25 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/12 19:41:47 by taboterm          #+#    #+#             */
-/*   Updated: 2022/06/13 13:34:19 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 18:12:44 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 /*Outputs the string s to the file descriptor fd.
 Param. #1 The string to output.
 Param. #2 The file descriptor. Return value None. 
 Libc functions write(2).*/
-
-#include "libft.h"
 
 void	ft_putstr_fd(char const *s, int fd)
 {
 	int	i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i] != 0)
 	{
 		write (fd, &s[i], 1);
@@ -29,9 +30,9 @@ void	ft_putstr_fd(char const *s, int fd)
 	}
 }
 
-// int main(void) 
-//{
-// 	char letter[] = "Stay gold, Pony Boy.\n";
-// 	ft_putstr_fd(letter, 1);
-// 	return(0);
-// }
+/*int main(void) 
+{
+	 	char letter[] = "Stay gold, Pony Boy.\n";
+ 	ft_putstr_fd(letter, 1);
+ 	return(0);
+}*/

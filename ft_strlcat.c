@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 18:31:08 by taboterm          #+#    #+#             */
-/*   Updated: 2022/05/24 14:05:53 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 18:20:46 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ isn’t set for the destination buffer. It’s quite possible for this
 buffer to overflow.As a solution, the strlcat() function offers an 
 additional argument, dstsize. This argument sets the length of the 
 destination string, effectively equal to its buffer size.*/
-
-#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
@@ -46,18 +44,18 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (dstlen + srclen);
 }
 
-// int	main(void)
-// {
-// 	char src[] = "Life is like";
-// 	char dst[] = "a box of chocolates";
-// 	int p;
-// 	size_t len;
+/*int	main(void)
+{
+ 	char src[] = "Life is like";
+ 	char dst[] = "a box of chocolates";
+ 	int p;
+ 	size_t len;
 
-// 	len = 45;
-// 	p = ft_strlcat(dst, src, len);
-// 	printf("test \n");
-// 	printf("before function: %s \n", src);
-// 	printf("return value:%zu\n", len);
-// 	printf("return value after:%d\n", p);
-// 	printf("original:%lu\n:",strlcat(dst, src, len));
-// }
+ 	len = 45;
+ 	p = ft_strlcat(dst, src, len);
+ 	printf("test \n");
+ 	printf("before function: %s \n", src);
+ 	printf("return value:%zu\n", len);
+ 	printf("return value after:%d\n", p);
+ 	printf("original:%lu\n:",strlcat(dst, src, len));
+}*/

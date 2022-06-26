@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 18:07:32 by taboterm          #+#    #+#             */
-/*   Updated: 2022/05/23 18:14:55 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 18:07:44 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,13 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 
-// int main(void)
-// {
-// 	char	string[10] = "bing bong";
-// 	printf("String before memset(); %s \n", string);
-// 	ft_memset(string, '*', 4 * sizeof(string[0])); //sets first characters to *
-// 	printf("String after memset(): %s \n", string);
-// 	memset(string, '*', 4 * sizeof(string[0])); 
-// 	printf("String after original(): %s \n", string);
-// 	return	(0);
-// }
+/*int main(void)
+{
+ 	char	string[10] = "bing bong";
+ 	printf("String before memset(); %s \n", string);
+ 	ft_memset(string, '*', 4 * sizeof(string[0])); //sets first characters to *
+ 	printf("String after memset(): %s \n", string);
+ 	memset(string, '*', 4 * sizeof(string[0])); 
+ 	printf("String after original(): %s \n", string);
+ 	return	(0);
+}*/

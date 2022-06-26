@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 17:29:09 by taboterm          #+#    #+#             */
-/*   Updated: 2022/05/04 15:45:26 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 17:43:48 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -24,11 +22,10 @@ int	ft_isascii(int c)
 	}
 }
 
-// int main(void)
-// {
-// 	int temp; //must call a temp int for the value to be placed
-
-// 	temp = ft_isascii('1'); //executing fuction, int does not have to be called
-// 	printf("%d\n", temp);
-// 	return(0);
-// }
+/*int main(void)
+{
+ 	int temp; //must call a temp int for the value to be placed
+ 	temp = ft_isascii('1'); //executing fuction, int does not have to be called
+ 	printf("%d\n", temp);
+ 	return(0);
+}*/

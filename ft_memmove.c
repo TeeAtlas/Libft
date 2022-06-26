@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 11:45:10 by taboterm          #+#    #+#             */
-/*   Updated: 2022/05/19 15:19:14 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 18:06:14 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,12 +43,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-// int	main(void)
-// {
-// 	char hel[50] = "hello world";
-// 	char bye[50] = "goodbye world";
-// 	ft_memmove(hel + 4, bye + 4, 6);
-// 	printf("before memmove; %s \n", hel);
-// 	printf("after memmove; %s \n", bye);
-// 	return	(0);
-// }
+/*int	main(void)
+{
+ 	char hel[50] = "hello world";
+ 	char bye[50] = "goodbye world";
+ 	ft_memmove(hel + 4, bye + 4, 6);
+ 	printf("before memmove; %s \n", hel);
+ 	printf("after memmove; %s \n", bye);
+ 	return	(0);
+}*/

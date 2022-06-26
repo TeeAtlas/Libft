@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 12:07:38 by taboterm          #+#    #+#             */
-/*   Updated: 2022/05/05 11:18:33 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 17:28:06 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isdigit(int c)
 {
@@ -21,10 +19,10 @@ int	ft_isdigit(int c)
 	return (0);
 }
 
-// int	main(void)
-// {
-// 	int temp;
-// 	temp = ft_isdigit ('g');
-// 	printf("%d\n", temp);
-// 	return(0);
-// }
+/* int	main(void)
+{
+	int temp;
+	temp = ft_isdigit ('g');
+	printf("%d\n", temp);
+	return(0);
+} */

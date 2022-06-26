@@ -6,11 +6,10 @@
 /*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/09 14:41:04 by taboterm          #+#    #+#             */
-/*   Updated: 2022/06/18 09:04:10 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 18:29:33 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 /*strchr, strrchr -- locate character in string
 The strrchr() function is identical to strchr(),
 except it locates the last occurrence of char.
@@ -37,16 +36,16 @@ char	*ft_strrchr(const char *s, int c)
 	return ((char *)&s[c_i]);
 }
 
-//  int main (void) 
-// {
-// 	// check(ft_strrchr(s, 't' + 256) == s); showLeaks();
-// 	// char * empty = (char*)calloc(1, 1);
-// 	char str[] = "tripouille";
-// 	// char ch[] = "ltripouiel";;
-//     char *result;
+/*int main (void) 
+{
+	// check(ft_strrchr(s, 't' + 256) == s); showLeaks();
+	// char * empty = (char*)calloc(1, 1);
+	char str[] = "tripouille";
+	// char ch[] = "ltripouiel";;
+    char *result;
 
-//     result = ft_strrchr(str, 't' + 256);
-//     printf("mine:%s\n", result);
-// 	printf("theirs:%s\n", strrchr(str,'t' + 256));
-//     return(0);
-// }
+    result = ft_strrchr(str, 't' + 256);
+    printf("mine:%s\n", result);
+	printf("theirs:%s\n", strrchr(str,'t' + 256));
+    return(0);
+}*/

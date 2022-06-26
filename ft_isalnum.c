@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 17:14:53 by taboterm          #+#    #+#             */
-/*   Updated: 2022/05/18 14:53:00 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 17:35:17 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ int	ft_isalnum(int c)
 		return (0);
 }
 
-// int	main(void)
-// {
-// 	int temp; //must call a temp int for the value to be placed
-// 	temp = ft_isalnum('9'); //executing fuction, int does not have to be called
-// 	printf("%d\n", temp);
-// 	return(0);
-// }
+/*int	main(void)
+{
+ 	int temp; //must call a temp int for the value to be placed
+ 	temp = ft_isalnum('9'); //executing fuction, int does not have to be called
+ 	printf("%d\n", temp);
+	return(0);
+}*/

@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 12:26:36 by taboterm          #+#    #+#             */
-/*   Updated: 2022/06/14 19:50:52 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 18:15:40 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 /* The strdup() function allocates sufficient memory
 for a copy of the string s1, does the copy, and returns 
@@ -41,16 +40,12 @@ char	*ft_strdup(const char *s1)
 	return (s2);
 }
 
-// int main(void)
-// {
-//     char str1[] = "I'm a copy";
-//     char *p;
+/*int main(void)
+{
+     char str1[] = "I'm a copy";
+     char *p;
 
-//     p = ft_strdup(str1);
-//     printf("\nthis string is: %s\n",ft_strdup(str1));
-//     printf("and this string points to: %s\n", p);
-//     // p = strdup(str1);
-//     // printf("this string is: %s\n",strdup(str1));
-//     // printf("and this string points to: %s\n\n", p);
-//     // return (0);
-// }
+     p = ft_strdup(str1);
+     printf("\nthis string is: %s\n",ft_strdup(str1));
+     printf("and this string points to: %s\n", p);
+}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/04 16:51:41 by taboterm          #+#    #+#             */
-/*   Updated: 2022/06/14 14:18:55 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 17:50:16 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,10 @@
 representing the integer received as an argument.
 Negative numbers must be handled.
 Null if allocation fails
-Param #1 n integer to be converted */
+Param #1 n integer to be converted 
+uning long int to */
 
-int	ft_length(long nb)
+int	ft_length(long int nb)
 {
 	int	i;
 
@@ -46,9 +47,9 @@ char	*ft_if(long nbr, char *nbr2)
 
 char	*ft_itoa(int n)
 {
-	char	*num;
-	int		i;
-	long	nb;
+	char			*num;
+	size_t			i;
+	long int		nb;
 
 	nb = n;
 	i = ft_length(nb);
@@ -71,8 +72,8 @@ char	*ft_itoa(int n)
 	return (num);
 }
 
-// int	main(void)
-// {
-// 	printf("return is:\n%s\n",ft_itoa(-3456));
-// 	return (0);
-// }
+/*int	main(void)
+{
+ 	printf("return is:\n%s\n",ft_itoa(-3456));
+	return (0);
+}*/

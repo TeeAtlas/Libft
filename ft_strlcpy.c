@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 13:55:43 by taboterm          #+#    #+#             */
-/*   Updated: 2022/05/24 10:39:38 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 18:22:15 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,15 +37,15 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (src_len);
 }
 
-// int	main(void)
-// {
-// 	char src[50] = "KittiesAndCritters";
-// 	char dst[50];
-// 	printf("Test \n");
-// 	printf("before function: %s \n", src);
-// 	ft_strlcpy(dst, src, 5);
-// 	printf("after mine: %s \n", dst);
-// 	strlcpy(dst, src, 5);
-// 	printf("after theirs: %s \n", dst);
-// 	return 0;
-// }
+/*int	main(void)
+{
+ 	char src[50] = "KittiesAndCritters";
+ 	char dst[50];
+ 	printf("Test \n");
+ 	printf("before function: %s \n", src);
+ 	ft_strlcpy(dst, src, 5);
+	printf("after mine: %s \n", dst);
+ 	strlcpy(dst, src, 5);
+ 	printf("after theirs: %s \n", dst);
+ 	return 0;
+}*/

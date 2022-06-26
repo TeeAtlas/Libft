@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 10:44:32 by taboterm          #+#    #+#             */
-/*   Updated: 2022/06/15 14:03:17 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 18:14:00 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,19 +41,6 @@ int	num_words(char const *s, char c)
 	return (words);
 }
 
-// int	word_len(char *str, int	i)
-// {
-// 	int	c;
-//
-// 	c = 0;
-//	while (str[i] && str [i]!= ' ' && str[i] != '\t' && str[i] != '\n')
-//	{
-// 	i++;
-// 	c++;
-//	}
-// 	return (c);
-// }
-
 char	*ft_word(const char *s1, int start, int end)
 {
 	int		i;
@@ -78,63 +65,41 @@ char	**ft_split(char const *s, char c)
 	int		index;
 	char	**tab;
 
+	if (!s)
+		return (NULL);
 	tab = (char **)malloc((num_words(s, c) + 1) * sizeof(char *));
 	if (!tab || !s)
 		return (NULL);
-	i = 0;
+	i = -1;
 	j = 0;
 	index = -1;
-	while (i <= ft_strlen(s))
+	while (++i <= ft_strlen(s))
 	{
 		if (s[i] != c && index < 0)
 			index = i;
 		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
 		{
-			tab[j] = ft_word(s, index, i);
-			j++;
+			tab[j++] = ft_word(s, index, i);
 			index = -1;
 		}
-		i++;
 	}
 	tab[j] = 0;
 	return (tab);
 }
 
-// int	main(void)
-// {
-// 	// printf("%d\n", num_words("    Tania    was  here !"));
-// 	// printf("\n");
-// 	// printf("%d\n", num_words("    Tania    was  here ! I am god    ."));
-
-// 	// printf("%d\n", word_len("Tania was here !", 10));
-// 	// printf("\n");
-// 	// printf("%d\n", word_len("Tania was here !", 7));
-
-// 	// printf("%s\n", ft_word("Tania was here !", 4, 8));
-// 	// printf("\n");
-// 	// printf("%s\n", ft_word("Tania was here !", 5, 9)); 
-// }
-
-// int		main(void)
-// {
-// 	char	**tab;
-// 	unsigned int	i;
-// 	int	c;
-// 	// char *str;
-//
-// 	c = 0;
-// 	tab = ft_split("Tania     says   hi, and hello !   ", 040);
-// 	// delimeter is an empty space. can i have more than one delimeter?
-// 	i = 0;
-// 	while (i < 7)
-// 	{
-// 		// while (str[i] && str [i]!= ' ' && str[i] != '\t' && str[i] != '\n')
-// 		// {
-// 		// i++;
-// 		// c++;
-// 		// }
-// 		printf("tab[%d] = %s\n", i, tab[i]);
-// 		i++;
-// 	}
-// 	return(0);
-// }
+/*int		main(void)
+{
+ 	char	**tab;
+ 	unsigned int	i;
+ 	int	c;
+	
+ 	c = 0;
+ 	tab = ft_split("Tania     says   hi, and hello !   ", 040);
+ 	i = 0;
+ 	while (i < 7)
+ 	{
+ 		printf("tab[%d] = %s\n", i, tab[i]);
+ 		i++;
+ 	}
+ 	return(0);
+}*/

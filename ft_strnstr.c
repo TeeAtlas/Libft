@@ -6,13 +6,11 @@
 /*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 20:47:16 by taboterm          #+#    #+#             */
-/*   Updated: 2022/06/18 09:04:55 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 18:28:41 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 /*strstr, strcasestr, strnstr -- locate a substring in a string
 The strnstr() function locates the first occurrence of the null-terminated
 string needle in the string haystack, where not more than len characters
@@ -46,17 +44,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 }
 
-// int main () 
-// {
-//     // const char haystack[] = "lazybrownfox";
-//     // const char needle[] = "zy";
-// 	// int n;
-
-// 	// n = 7;
-// 	char haystack[30] = "aaabcabcd";
-// 	char needle[10] = "aabc";
-// 	char * empty = (char*)"";
-//     printf("The substring is: %s\n", ft_strnstr(haystack, "a", 1));
-// 	printf("The o is: %s\n", strnstr(haystack, "a", 1));
-//     return(0);
-// }
+/*int main(void) 
+{
+ 	char haystack[30] = "aaabcabcd";
+ 	char needle[10] = "aabc";
+ 	char * empty = (char*)"";
+    printf("The substring is: %s\n", ft_strnstr(haystack, "a", 1));
+ 	printf("The o is: %s\n", strnstr(haystack, "a", 1));
+    return(0);
+}*/

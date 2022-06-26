@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 11:01:52 by taboterm          #+#    #+#             */
-/*   Updated: 2022/06/14 17:40:05 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 18:24:33 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,12 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	len;
 
 	i = 0;
+	if (!s || !f)
+		return (NULL);
 	str = (char *) malloc ((ft_strlen((char *)s) + 1) * sizeof(char));
-	len = ft_strlen(s);
 	if (!str)
 		return (NULL);
+	len = ft_strlen(s);
 	str[len] = '\0';
 	while (s[i] != '\0')
 	{
@@ -40,16 +42,16 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str);
 }
 
-// char	my_func(unsigned int i, char str)
-// {
-// 	printf ("My inner function: index = %d and %c\n", i, str);
-// 	return (str - 32);
-// }
+/*char	my_func(unsigned int i, char str)
+{
+ 	printf ("My inner function: index = %d and %c\n", i, str);
+ 	return (str - 32);
+}
 
-// int main()
-// {
-// 		char str[10] = "kooky"; // how do I keep the period?
-//  	char *result = ft_strmapi(str, my_func);
-//  	printf("The result is %s\n", result);
-// 	return 0;
-// }
+int main()
+{
+ 		char str[10] = "kooky"; // how do I keep the period?
+  	char *result = ft_strmapi(str, my_func);
+  	printf("The result is %s\n", result);
+ 	return 0;
+}*/

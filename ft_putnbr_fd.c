@@ -3,20 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/12 20:25:20 by taboterm          #+#    #+#             */
-/*   Updated: 2022/06/13 14:12:15 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 18:11:48 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 /*description output the integer n to the file descriptor fd.
 Param. #1 The integer to print.
 Param. #2 The file descriptor.
 Return = 0
 Libc functions write(2)*/
-
-#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -41,9 +40,9 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 }
 
-// int	main(void)
-// {
-// 	int a = -2147483648;
-// 	ft_putnbr_fd(a, 1);
-// 	return (0);
-// }
+/*int	main(void)
+{
+ 	int a = -2147483648;
+ 	ft_putnbr_fd(a, 1);
+ 	return (0);
+}*/

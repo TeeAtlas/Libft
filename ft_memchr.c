@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: taboterm <taboterm@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: taboterm <taboterm@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 16:00:32 by taboterm          #+#    #+#             */
-/*   Updated: 2022/05/19 14:26:45 by taboterm         ###   ########.fr       */
+/*   Updated: 2022/06/25 17:53:01 by taboterm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-// int	main(void)
-// {
-// 	char	str[] = "1234567c89";
-// 	const	char	*c1;
-
-// 	printf("Test \n");
-// 	printf("before function: %s\n", str);
-// 	printf("after function: %s\n", ft_memchr(str, 'c', 10));
-// 	return	0;
-// }
+/*int	main(void)
+{
+ 	char	str[] = "1234567c89";
+ 	const	char	*c1;
+ 	printf("Test \n");
+ 	printf("before function: %s\n", str);
+ 	printf("after function: %s\n", ft_memchr(str, 'c', 10));
+ 	return	0;
+}*/
